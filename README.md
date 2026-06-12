@@ -60,8 +60,8 @@ Wymagane do poprawnego działania aplikacji
 
 ## Uruchomienie lokalne - Windows
 Aplikacja zawiera pliki uruchumieniowe Windows:
-- run_windows.bat - plik uruchomieniowy
-- run_windows.ps1 - plik pomocniczy
+- `run_windows.bat` - plik uruchomieniowy
+- `run_windows.ps1` - plik pomocniczy
 
 Dzialanie skryptu
 - sprawdza dostępność wymaganej wersji Pythona,
