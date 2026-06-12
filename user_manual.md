@@ -7,7 +7,9 @@ Uruchom aplikację według
 
 2. uruchomienie poprzez Docker 
    > uruchom konsolę
+   > 
    > wprowadź komendę `docker compose up --build`
+   > 
    > otwórz przeglądarkę i wejdź na stronę `http://localhost:8501`
    >
     aplikacja została uruchomiona w karcie przeglądarki 
