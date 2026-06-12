@@ -1,0 +1,8 @@
+{
+  "precision_at_k": 0.055222790357925496,
+  "recall_at_k": 0.16210262431509367,
+  "coverage": 0.3549113425274416,
+  "users_evaluated": 4107.0,
+  "users_with_recommendations": 9908.0,
+  "unique_recommended_games": 1261.0
+}

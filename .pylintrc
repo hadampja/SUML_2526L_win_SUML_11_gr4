@@ -1,0 +1,37 @@
+[MAIN]
+ignore-paths=^vendor/.*$,^notebooks/.*$,^docs/.*$,^.venv/.*$,^build/.*$
+ignore=conftest.py,setup.py
+load-plugins=
+
+[MESSAGES CONTROL]
+# Pragmatic exclusions for ML code, where short variable names like X / y are
+# domain-standard and module/function docstrings are often redundant with
+# Sphinx-style autodocs.
+disable=
+    missing-module-docstring,
+    too-few-public-methods,
+    too-many-arguments,
+    too-many-positional-arguments,
+    too-many-locals,
+    too-many-branches,
+    too-many-statements,
+    invalid-name,
+    duplicate-code,
+    fixme,
+    line-too-long,
+    import-outside-toplevel,
+    logging-fstring-interpolation,
+    no-name-in-module,
+    consider-using-from-import,
+    wrong-import-order
+
+[FORMAT]
+max-line-length=120
+
+[DESIGN]
+max-args=8
+max-attributes=12
+max-public-methods=25
+
+[BASIC]
+good-names=df,fh,X,y,X_train,X_val,X_test,y_train,y_val,y_test,x_train,x_val,x_test,k,_,fp,n

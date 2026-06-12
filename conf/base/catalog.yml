@@ -1,0 +1,96 @@
+steam_raw:
+  type: pandas.CSVDataset
+  filepath: data/raw/steam-200k.csv
+  load_args:
+    header: null
+    names: ["user_id", "game_title", "behavior", "value", "extra"]
+    usecols: ["user_id", "game_title", "behavior", "value"]
+    index_col: false
+
+steam_play_interactions:
+  type: pandas.CSVDataset
+  filepath: data/intermediate/steam_play_interactions.csv
+  save_args:
+    index: False
+    lineterminator: "\n"
+
+clean_data:
+  type: pandas.CSVDataset
+  filepath: data/intermediate/clean_data.csv
+  save_args:
+    index: False
+    lineterminator: "\n"
+
+scaled_data:
+  type: pandas.CSVDataset
+  filepath: data/primary/scaled_data.csv
+  save_args:
+    index: False
+    lineterminator: "\n"
+
+train_data:
+  type: pandas.CSVDataset
+  filepath: data/model_input/train.csv
+  save_args:
+    index: False
+    lineterminator: "\n"
+
+val_data:
+  type: pandas.CSVDataset
+  filepath: data/model_input/val.csv
+  save_args:
+    index: False
+    lineterminator: "\n"
+
+test_data:
+  type: pandas.CSVDataset
+  filepath: data/model_input/test.csv
+  save_args:
+    index: False
+    lineterminator: "\n"
+
+eda_stats:
+  type: pandas.CSVDataset
+  filepath: data/intermediate/eda_stats.csv
+  save_args:
+    index: False
+    lineterminator: "\n"
+
+eda_missing:
+  type: pandas.CSVDataset
+  filepath: data/intermediate/eda_missing.csv
+  save_args:
+    index: False
+    lineterminator: "\n"
+
+eda_correlations:
+  type: pandas.CSVDataset
+  filepath: data/intermediate/eda_correlations.csv
+  save_args:
+    index: False
+    lineterminator: "\n"
+
+eda_outliers:
+  type: pandas.CSVDataset
+  filepath: data/intermediate/eda_outliers.csv
+  save_args:
+    index: False
+    lineterminator: "\n"
+
+eda_quality_report:
+  type: pandas.CSVDataset
+  filepath: data/intermediate/eda_quality_report.csv
+  save_args:
+    index: False
+    lineterminator: "\n"
+
+recommender_metrics:
+  type: json.JSONDataset
+  filepath: data/reporting/recommender_metrics.json
+
+recommendations_top5:
+  type: pandas.CSVDataset
+  filepath: data/reporting/recommendations_top5.csv
+  save_args:
+    index: False
+    lineterminator: "\n"

@@ -1,0 +1,44 @@
+# Python cache / build output
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Test / lint / coverage output
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Local config and secrets
+.env
+.env.*
+conf/local/*
+!conf/local/.gitkeep
+
+# IDE / OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Logs and generated visualisations
+*.log
+.viz/
+
+# Kedro-generated intermediate artifacts
+data/intermediate/
+data/primary/
+data/model_input/
+
+# Keep raw data and final reporting artifacts for reproducibility/demo:
+# data/raw/steam-200k.csv
+# data/reporting/recommendations_top5.csv
+# data/reporting/recommender_metrics.json

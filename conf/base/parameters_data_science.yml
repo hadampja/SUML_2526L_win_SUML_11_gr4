@@ -1,0 +1,5 @@
+recommender:
+  top_k: 5
+  min_game_users: 5
+  holdout_fraction: 0.2
+  random_state: 42

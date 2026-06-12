@@ -1,0 +1,71 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai_project_s28551"
+readme = "README.md"
+requires-python = ">=3.11"
+dynamic = ["version"]
+dependencies = [
+    "kedro~=1.0.0",
+    "kedro-datasets[pandas-csvdataset,matplotlib-matplotlibwriter]>=3.0",
+    "pandas>=2.0",
+    "numpy>=1.26",
+    "scikit-learn>=1.4,<1.6",
+    "matplotlib>=3.7",
+    "seaborn~=0.13",
+    "fastapi>=0.110",
+    "uvicorn[standard]>=0.27",
+    "streamlit>=1.30",
+    "requests>=2.31",
+    "setuptools; python_version >= '3.12'",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4",
+    "pytest-cov>=4.1",
+    "pylint>=3.0",
+    "ruff>=0.5",
+    "httpx>=0.27",
+]
+
+[tool.setuptools.dynamic]
+version = {attr = "ai_project_s28551.__version__"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+namespaces = false
+
+[tool.kedro]
+package_name = "ai_project_s28551"
+project_name = "ai_project_s28551"
+kedro_init_version = "1.0.0"
+source_dir = "src"
+tools = "['Linting', 'Testing', 'Custom Logging', 'Data Structure']"
+example_pipeline = "False"
+
+[tool.pytest.ini_options]
+addopts = """
+--cov-report term-missing \
+--cov src/ai_project_s28551 -ra"""
+
+[tool.coverage.report]
+fail_under = 0
+show_missing = true
+exclude_lines = ["pragma: no cover", "raise NotImplementedError"]
+
+[tool.ruff]
+line-length = 88
+show-fixes = true
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.ruff.lint]
+select = ["F", "W", "E", "I", "UP", "PL", "T201"]
+ignore = ["E501"]
+
+[tool.kedro_telemetry]
+project_id = "603dc00f1dfd4c01b8679bcae2ae7e99"
