@@ -1,4 +1,5 @@
 # Instrukcja użytkownika
+## Uruchomienie
 Uruchom aplikację według 
 1. uruchomienie poprzez Windows
    > uruchom plik `run_windows.bat`
@@ -14,4 +15,5 @@ aplikacja została uruchomiona w karcie przeglądarki
    >
 aplikacja została uruchomiona w karcie przeglądarki
 
-3. Wprowadź `user_id` (z listy użytkowników zawartek w pliku `user_list.txt`) aby wyświetlić rekomendacje
+## Użytkowanie
+1. Wprowadź `user_id` (z listy użytkowników zawartek w pliku `user_list.txt`) aby wyświetlić rekomendacje
