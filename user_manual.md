@@ -13,3 +13,4 @@ Uruchom aplikację według
    > otwórz przeglądarkę i wejdź na stronę `http://localhost:8501`
    >
     aplikacja została uruchomiona w karcie przeglądarki 
+3. Wprowadź `user_id` (z listy użytkowników zawartek w pliku `user_list.txt`) aby wyświetlić rekomendacje
