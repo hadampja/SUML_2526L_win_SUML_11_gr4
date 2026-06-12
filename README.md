@@ -52,7 +52,7 @@ skupia sie na realistycznej ewaluacji systemu rekomendacji.
 ## Wymagania systemowe
 Wymagane do poprawnego działania aplikacji 
 - Python 3.11 lub 3.12
-- opcjonalnie Finch albo Docker do uruchomienia w kontenerach
+- opcjonalnie - Docker do uruchomienia w kontenerach
 
 ## requirements
 - zaleznosci runtime w `requirements.txt`
