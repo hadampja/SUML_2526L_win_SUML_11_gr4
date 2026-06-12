@@ -16,4 +16,4 @@ aplikacja została uruchomiona w karcie przeglądarki
 aplikacja została uruchomiona w karcie przeglądarki
 
 ## Użytkowanie
-1. Wprowadź `user_id` (z listy użytkowników zawartek w pliku `user_list.txt`) aby wyświetlić rekomendacje
+1. Wprowadź `user_id` szukanego użytkownika (z listy użytkowników zawartek w pliku `user_list.txt`) aby wyświetlić rekomendacje
