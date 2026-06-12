@@ -54,7 +54,7 @@ Wymagane do poprawnego działania aplikacji
 - Python 3.11 lub 3.12
 - opcjonalnie Finch albo Docker do uruchomienia w kontenerach
 
-#requirements
+## requirements
 - zaleznosci runtime w `requirements.txt`
 - narzedzia developerskie w `requirements-dev.txt`
 
